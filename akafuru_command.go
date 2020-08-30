@@ -1,4 +1,4 @@
-package gcp_function_subscriber
+package akafuru_bot
 
 import (
 	"net/http"
@@ -33,6 +33,8 @@ func AkafuruCommand(w http.ResponseWriter, r *http.Request) {
 		handler.Hello(w, s)
 	case "/sum":
 		handler.Sum(w, s)
+	case "/steps":
+		handler.Steps(w, s)
 	default:
 		w.WriteHeader(http.StatusInternalServerError)
 		return

@@ -7,7 +7,7 @@ import (
 )
 
 func Hello(w http.ResponseWriter, s slack.SlashCommand) {
-	params := &slack.Msg{ResponseType: "in_channel", Text: "こんにちは、<@" + s.UserID + ">さん"}
+	params := &slack.Msg{ResponseType: "in_channel", Text: "こんニャちは、<@" + s.UserID + ">! :cat:"}
 	b, err := slackMsg2Marshal(params)
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
