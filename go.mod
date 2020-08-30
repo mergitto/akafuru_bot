@@ -1,4 +1,4 @@
-module github.com/mergitto/gcp-function-subscriber
+module github.com/mergitto/akafuru_bot
 
 go 1.14
 

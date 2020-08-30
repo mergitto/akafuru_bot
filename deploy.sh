@@ -1,5 +1,5 @@
 gcloud functions deploy "$FUNCTION_NAME" \
---entry-point HelloCommand \
+--entry-point AkafuruCommand \
 --runtime go113 \
 --region asia-northeast1 \
 --trigger-http \
